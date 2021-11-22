@@ -1,0 +1,135 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  margin:auto;
+  font-family: museo-slab, sans-serif;
+  font-size: 18px;
+}
+
+h1{
+  font-size: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.home{
+    text-align: center;
+}
+
+nav{
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+nav ul{
+  background-color: #3f3f3f;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration-line: none;
+}
+
+nav li:hover{
+  background-color: #8e8e8e;
+  text-decoration: underline;
+}
+
+  .current{
+  text-decoration: underline wavy tomato 2px;
+  text-shadow: 1px 1px tomato;
+}
+
+.skip a{
+  background: white;
+  left: 0px;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+  position: absolute;
+  transition: none;
+  left:0px;
+  top:0px;
+}
+
+*:focus {
+  border: 2px solid black;
+}
+
+.container{
+
+  display: grid;
+  grid-template-rows: 10% 30% auto 20%;
+  display: inline-block;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Header */
+header {
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  color: white;
+  height: 600px; /* Parallax effect */
+
+  /* YOUR CODE HERE; */
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  background-image: url('../images/sona-grass.JPG');
+  background-repeat: no-repeat;
+}
+
+.services{
+    background-image: url('../images/esma-grass-flat.jpg');
+}
+
+.kitties{
+    background-image: url('../images/esma-sleep-ottoman.jpg');
+}
+
+.contact{
+    background-image: url('../images/sona-study-buddy.JPG');
+}
+
+footer{
+  position: sticky;
+  height: 20%;
+  width: 100%;
+  color: white;
+  background-color: #333;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  grid-column: 0 / -1;
+  grid-row: 0 / span 4;
+}
