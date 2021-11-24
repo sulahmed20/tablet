@@ -95,7 +95,7 @@ nav li:hover{
 }
 
 /* Header */
-header {
+.homepage {
   background-attachment: fixed; /* Parallax effect */
   background-position:center; /* Parallax effect */
   background-size: cover; /* Parallax effect */
@@ -111,15 +111,111 @@ header {
 /* END HEADER */
 
 .pricing{
-  background-image: url('../images/esma-grass-flat.jpg');
+  min-height: 475px;
 }
 
-.kitties{
-  background-image: url('../images/esma-sleep-ottoman.jpg');
+.card {
+  margin: 12px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 0 0 25px 0;
+
+}
+
+.card > ul{
+  list-style: none;
+  padding-left: 5px;
+}
+
+.card > ul li {
+  width: 90%;
+  margin: 20px auto;
+  
+}
+
+.card button{
+  width: 90%;
+  height: 40px;
+  border: 0;
+  margin-left: 5%;
+  border-radius: 7px;
+  background: #26a530aa;
+  color: white;
+  font-size: 1em;
+}
+
+.card h3{
+  font-size: 4em;
+  color: white;
+  text-align: center;
+}
+
+.card > header {
+  background: #26a530aa;
+  border: 2px solid #26d7349c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.pricing{
+display: flex;
+justify-content: center;
+align-items:center; 
+flex-wrap: wrap;
+}
+
+.card {
+display: flex;
+flex-basis: 450px;
+flex-direction: column;
+}
+
+html, body {
+  background-color: var(--dark);
+  margin: 5px;
+}
+
+.container {
+  padding-top: 50px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-auto-rows: 120px;
+  grid-auto-flow: dense;
+}
+
+.container > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.container > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 2px 16px var(--shadow);
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .contact{
   background-image: url('../images/sona-study-buddy.JPG');
+  /* font-size: 2em; */
 }
 
 footer{
@@ -143,6 +239,8 @@ footer{
     padding: 10px;
     object-fit: contain;
 }
+
+
 
   footer {
     font-size: 24px;
